@@ -22,7 +22,7 @@
     </nav>
 
     <ul class = "nav nav-pills nav-justified">
-      <li><a href = "#">algorithms</a></li>
+      <li><a href = "#"><b>algorithms</b></a></li>
     </ul>
 
     <ul class = "nav nav-pills nav-justified">
@@ -35,21 +35,39 @@
       <!-- Carousel items -->
       <div class = "carousel-inner">
 	<div class = "item active">
+	  </br>
+	  <li><p>Classe definissant un <i>FVSPoint</i>. Un <i>FVSPoint</i> contient un noeud <i>root</i>, un poid
+	    <i>w</i> et un boolean <i>isUsed</i> servant dans la detection de cycle comme marqueur
+	    de passage</p></li>
+	  </br>
+	  
           <table class = "table">
             <thead>
               <tr>
                 <th style="background-color: white">Contructeur</th>
               </tr>
             </thead>
+
+	    <tbody>
+              <tr class = "active">
+                <td><b>public FVSPoint(Point root)</b></td>
+              </tr>
+              
+              <tr class = "warning">
+                <td><p>Constructeur prenant un point en parametre,
+		   le poid <i>w</i> est initialisé à <i>1</i> et le champs <i>isUsed</i> à <i>false</i>.<p></td>
+              </tr>
+            </tbody>
             
             <tbody>
               <tr class = "active">
-                <td>public FVSPoint(Point root, double w)</td>
+                <td><b>public FVSPoint(Point root, double w)</b></td>
               </tr>
               
               <tr class = "warning">
                 <td><p>Constructeur prenant un point et un poid en parametre,
-		    et initialisant les champs concernès.<p></td>
+		    et initialisant les champs concernès, le champs <i>isUsed</i>
+		    est initialisé à <i>false</i>.<p></td>
               </tr>
             </tbody>
           </table>
@@ -63,11 +81,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>public Point getRoot()</td>
+                <td><b>public Point getRoot()</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Retourne le noeud <i>root</i> de l'objet<p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -81,11 +99,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>public double w()</td>
+                <td><b>public double w()</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Retourne le poid <i>w</i> du noeud<p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -99,11 +117,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>public void setW(double w)</td>
+                <td><b>public void setW(double w)</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Affecte une nouvelle valeur au poid <i>w</i> du noeud<p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -117,11 +135,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>public boolean getIsUsed()</td>
+                <td><b>public boolean getIsUsed()</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Vérifie si le noeud courant a été marque<p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -135,11 +153,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>public void setIsUsed(boolean val)</td>
+                <td><b>public void setIsUsed(boolean val)</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Modifie l'attribut <i>isUsed</i> pour marquer ou démarquer un noeud<p></td>
               </tr>
 
 	      <tr class = "warning">

@@ -22,7 +22,7 @@
     </nav>
 
     <ul class = "nav nav-pills nav-justified">
-      <li><a href = "#">algorithms</a></li>
+      <li><a href = "#"><b>algorithms</b></a></li>
     </ul>
 
     <ul class = "nav nav-pills nav-justified">
@@ -35,6 +35,8 @@
       <!-- Carousel items -->
       <div class = "carousel-inner">
 	<div class = "item active">
+	   </br><li><p>Classe implementant l'algorithme <i>Bafna-Berman-Fujito</i></p></li></br>
+	  
           <table class = "table">
             <thead>
               <tr>
@@ -44,11 +46,11 @@
             
             <tbody>
               <tr class = "active">
-                <td>public DefaultTeam()</td>
+                <td><b>public DefaultTeam()</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Constructeur sans parametre heritant de la classe Object<p></td>
+                <td><p>Constructeur sans paramètre héritant de la classe <i>Object</i><p></td>
               </tr>
             </tbody>
           </table>
@@ -62,11 +64,13 @@
             
             <tbody>
               <tr class = "active">
-                <td>public ArrayList<Point> calculFVS(ArrayList<Point> points)</td>
+                <td><b>public ArrayList<Point> calculFVS(ArrayList<Point> points)</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Point d'entrée de notre algorithme, méthode prenant la liste de points a
+		    traier en paramètre et retournant le resultat de l'algorithme
+		    <i>Bafna-Berman-Fujito</i><p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -80,11 +84,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>private ArrayList<Point> fvsListToPointList(ArrayList<FVSPoint> fvsPoints)</td>
+                <td><b>private ArrayList<Point> fvsListToPointList(ArrayList<FVSPoint> fvsPoints)</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Conversion d'une liste de <i>FVSPoint</i> vers une liste de Point<p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -98,11 +102,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>private int getDegree(FVSPoint p)</td>
+                <td><b>private int getDegree(FVSPoint p)</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Calcule le degré d'un <i>FVSPoint</i><p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -116,11 +120,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>private ArrayList<FVSPoint> neighbour(FVSPoint p)</td>
+                <td><b>private ArrayList<FVSPoint> neighbour(FVSPoint p)</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Retourne la liste des voisins d'un noeud<p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -134,11 +138,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>private void start()</td>
+                <td><b>private void start()</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Méthode implémentant l'algorithme <i>Bafna-Berman-Fujito</i><p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -152,11 +156,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>private void processSemidisjointFound(ArrayList<FVSPoint> points)</td>
+                <td><b>private void processSemidisjointFound(ArrayList<FVSPoint> points)</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Le traitement à faire lorsqu'un cycle semi disjoint est retrouvé<p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -170,11 +174,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>private void processSemidisjointNotFound(ArrayList<FVSPoint> points)</td>
+                <td><b>private void processSemidisjointNotFound(ArrayList<FVSPoint> points)</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Le traitement à faire lorsqu'un cycle semi disjoint n'est pas retrouvé<p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -188,11 +192,12 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>private void updateGraph()</td>
+                <td><b>private void updateGraph()</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Suppression des noeuds ayant un poid <i>0</i> du graphe <i>G</i>, et ajout de ces
+		    points a la liste de noeuds <i>F</i> ainsi qu'à la pile<p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -206,11 +211,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>private void cleanUp()</td>
+                <td><b>private void cleanUp()</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Suppression dans <i>G</i> des noeuds de degré <i>0</i> ou <i>1</i><p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -224,11 +229,11 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>private boolean isSemidisjointCycle(ArrayList<FVSPoint> points)</td>
+                <td><b>private boolean isSemidisjointCycle(ArrayList<FVSPoint> points)</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Vérifier si la liste points est un cycle semi disjoint<p></td>
               </tr>
 
 	      <tr class = "warning">
@@ -242,12 +247,12 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>private ArrayList<FVSPoint> getSemidisjointCycle(FVSPoint parent,
-	    FVSPoint current, ArrayList<FVSPoint> path)</td>
+                <td><b>private ArrayList<FVSPoint> getSemidisjointCycle(FVSPoint parent,
+	    FVSPoint current, ArrayList<FVSPoint> path)</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Recherche un cycle semi disjoint en debutant le parcours depuis current<p></td>
               </tr>
 
 	      <tr class = "warning">

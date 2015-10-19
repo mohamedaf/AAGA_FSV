@@ -22,7 +22,7 @@
     </nav>
 
     <ul class = "nav nav-pills nav-justified">
-      <li><a href = "#">algorithms</a></li>
+      <li><a href = "#"><b>algorithms</b></a></li>
     </ul>
 
     <ul class = "nav nav-pills nav-justified">
@@ -35,6 +35,14 @@
       <!-- Carousel items -->
       <div class = "carousel-inner">
 	<div class = "item active">
+	  </br>
+	  <li>
+	    <p>Classe contenant quelques méthodes servant comme outils dans l'implémentation
+	      de l'algorithme <i>Bafna-Berman-Fujito</i>
+	    </p>
+	  </li>
+          </br>
+	  
           <table class = "table">
             <thead>
               <tr>
@@ -44,11 +52,11 @@
             
             <tbody>
               <tr class = "active">
-                <td>public Evaluation()</td>
+                <td><b>public Evaluation()</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Constructeur sans parametre heritant de la classe Object<p></td>
+                <td><p>Constructeur sans paramètre heritant de la classe <i>Object</i><p></td>
               </tr>
             </tbody>
           </table>
@@ -62,7 +70,26 @@
             
             <tbody>
               <tr class = "active">
-                <td>private boolean isMember(ArrayList<Point> points, Point p)</td>
+                <td><b>private boolean isMember(ArrayList<Point> points, Point p)</b></td>
+              </tr>
+              
+              <tr class = "warning">
+                <td><p>Vérifie si le point p se trouve dans la liste points,
+		    retourne <i>true</i> si c'est la cas et <i>false</i> sinon<p></td>
+              </tr>
+
+	      <tr class = "warning">
+                <td><p>Test<p></td>
+              </tr>
+
+	      <tr class = "warning">
+                <td><p>Exemple<p></td>
+              </tr>
+            </tbody>
+
+	    <tbody>
+              <tr class = "active">
+                <td><b>public boolean isValide(ArrayList<Point> origPoints, ArrayList<Point> fvs)</b></td>
               </tr>
               
               <tr class = "warning">
@@ -80,29 +107,12 @@
 
 	    <tbody>
               <tr class = "active">
-                <td>public boolean isValide(ArrayList<Point> origPoints, ArrayList<Point> fvs)</td>
+                <td><b>private ArrayList<Point> neighbor(Point p, ArrayList<Point> vertices)</b></td>
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
-              </tr>
-            </tbody>
-
-	    <tbody>
-              <tr class = "active">
-                <td>private ArrayList<Point> neighbor(Point p, ArrayList<Point> vertices)</td>
-              </tr>
-              
-              <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p>Retourne la liste des voisins du point p dans la liste vertices,
+		    un voisin est un point à une distance < 100><p></td>
               </tr>
 
 	      <tr class = "warning">
