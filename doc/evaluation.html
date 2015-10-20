@@ -4,25 +4,36 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" media="screen"/>
+    <style>
+      .navbar { margin-bottom:0; }
+    </style>
     <title>Evaluation.java</title>
   </head>
   
   <body style="background-color: #f5f5f5">
     <nav class = "navbar navbar-inverse" role = "navigation">
       <div class = "navbar-header">
-	<a class = "navbar-brand" href = "index.html">Documentation</a>
+	<a class = "navbar-brand" href = "index.html"><b>Documentation Bafna-Berman-Fujito</b></a>
       </div>
       
       <div>
 	<ul class = "nav navbar-nav">
           <li><a href = "index.html">Home</a></li>
           <li class = "active"><a href = "packages.html">Packages</a></li>
+	  <li><a href = "#">Historique de developpement</a></li>
+          <li><a href = "https://www-apr.lip6.fr/~buixuan/files/aaga2015/FVS/vfs_bafna.pdf">Bibliographie</a></li>
+	</ul>
+      </div>
+
+      <div>
+	<ul class="nav navbar-nav navbar-right">
+	   <li><a href = "https://fr.linkedin.com/in/mohamedaffes"><b>AFFES Mohamed Amin</b></a></li>
 	</ul>
       </div>
     </nav>
 
     <ul class = "nav nav-pills nav-justified">
-      <li><a href = "#"><b>algorithms</b></a></li>
+      <li><a href = "#" style="background-color : #414141"><b>algorithms</b></a></li>
     </ul>
 
     <ul class = "nav nav-pills nav-justified">
@@ -46,7 +57,7 @@
           <table class = "table">
             <thead>
               <tr>
-                <th style="background-color: white">Contructeur</th>
+                <th style="background-color: white"><h4>Contructeur</h4></th>
               </tr>
             </thead>
             
@@ -56,7 +67,8 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Constructeur sans paramètre heritant de la classe <i>Object</i><p></td>
+                <td><p><b>Description</b></br></br>
+		    Constructeur sans paramètre heritant de la classe <i>Object</i><p></td>
               </tr>
             </tbody>
           </table>
@@ -64,7 +76,7 @@
 	  <table class = "table">
             <thead>
               <tr>
-                <th style="background-color: white">Methodes</th>
+                <th style="background-color: white"><h4>Methodes<h4></th>
               </tr>
             </thead>
             
@@ -74,16 +86,20 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Vérifie si le point p se trouve dans la liste points,
-		    retourne <i>true</i> si c'est la cas et <i>false</i> sinon<p></td>
+                <td><p><b>Description</b></br></br>
+		    Vérifie si le point p se trouve dans la liste points,
+		    retourne <i>true</i> si c'est la cas et <i>false</i> sinon</br>
+		    <i>param points : liste de points</i></br>
+		    <i>param p : point recherche</i></br>
+		    <i>return 'true' si p appartient à la liste points, 'false' sinon</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    On considère:</br>
+		    points [(1,6), (5,9), (2,5)]</br>
+		    p (5,9)</br>
+		    -> La méthode retourne true<p></td>
               </tr>
             </tbody>
 
@@ -93,15 +109,16 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Description<p></td>
+                <td><p><b>Description</b></br></br>
+		    Vérifie si en retirant les points de la liste fvs de la liste origPoints,
+		    le graphe resultant reste valide</br>
+		    <i>param origPoints : graphe original</i></br>
+		    <i>param fvs : liste des points à retirer</i></br>
+		    <i>return 'true' si le graphe resultant est valide, 'false' sinon</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br><p></td>
               </tr>
             </tbody>
 
@@ -111,16 +128,20 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Retourne la liste des voisins du point p dans la liste vertices,
-		    un voisin est un point à une distance < 100><p></td>
+                <td><p><b>Description</b></br></br>
+		    Retourne la liste des voisins d'un point p dans la liste de points
+		    verticles, un voisin est un point qui est à une distance < 100</br>
+		    <i>param p : un point</i></br>
+		    <i>param vertices : une liste de points</i></br>
+		    <i>return : la liste de voisins du point p</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    On considère:</br>
+		    p (2,5)</br>
+		    vertices [(50,70), (10,8), (200,8), (130,80)]</br>
+		    -> La méthode retourne [(50,70), (10,8)]<p></td>
               </tr>
             </tbody>
           </table>

@@ -4,25 +4,37 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" media="screen"/>
+
+    <style>
+      .navbar { margin-bottom:0; }
+    </style>
     <title>FVSPoint.java</title>
   </head>
   
   <body style="background-color: #f5f5f5">
     <nav class = "navbar navbar-inverse" role = "navigation">
       <div class = "navbar-header">
-	<a class = "navbar-brand" href = "index.html">Documentation</a>
+	<a class = "navbar-brand" href = "index.html"><b>Documentation Bafna-Berman-Fujito</b></a>
       </div>
       
       <div>
 	<ul class = "nav navbar-nav">
           <li><a href = "index.html">Home</a></li>
           <li class = "active"><a href = "packages.html">Packages</a></li>
+	  <li><a href = "#">Historique de developpement</a></li>
+          <li><a href = "https://www-apr.lip6.fr/~buixuan/files/aaga2015/FVS/vfs_bafna.pdf">Bibliographie</a></li>
+	</ul>
+      </div>
+
+      <div>
+	<ul class="nav navbar-nav navbar-right">
+	   <li><a href = "https://fr.linkedin.com/in/mohamedaffes"><b>AFFES Mohamed Amin</b></a></li>
 	</ul>
       </div>
     </nav>
 
     <ul class = "nav nav-pills nav-justified">
-      <li><a href = "#"><b>algorithms</b></a></li>
+      <li><a href = "#" style="background-color : #414141"><b>algorithms</b></a></li>
     </ul>
 
     <ul class = "nav nav-pills nav-justified">
@@ -44,7 +56,7 @@
           <table class = "table">
             <thead>
               <tr>
-                <th style="background-color: white">Contructeur</th>
+                <th style="background-color: white"><h4>Contructeur</h4</th>
               </tr>
             </thead>
 
@@ -54,8 +66,10 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Constructeur prenant un point en parametre,
-		   le poid <i>w</i> est initialisé à <i>1</i> et le champs <i>isUsed</i> à <i>false</i>.<p></td>
+                <td><p><b>Description</b></br></br>
+		    Constructeur prenant un point en parametre,
+		    le poid <i>w</i> est initialisé à <i>1</i>.
+		    <i>param root : valeur affecte au noeud root de l'objet</i></br><p></td>
               </tr>
             </tbody>
             
@@ -65,9 +79,11 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Constructeur prenant un point et un poid en parametre,
-		    et initialisant les champs concernès, le champs <i>isUsed</i>
-		    est initialisé à <i>false</i>.<p></td>
+                <td><p><b>Description</b></br></br>
+		    Constructeur prenant un point et un poid en parametre,
+		    et initialisant les champs concernès.</br>
+		    <i>param root : valeur affecte au noeud root de l'objet</i></br>
+		    <i>param w : poid du noeud</i><p></td>
               </tr>
             </tbody>
           </table>
@@ -75,7 +91,7 @@
 	  <table class = "table">
             <thead>
               <tr>
-                <th style="background-color: white">Methodes</th>
+                <th style="background-color: white"><h4>Methodes</h4></th>
               </tr>
             </thead>
 
@@ -85,15 +101,15 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Retourne le noeud <i>root</i> de l'objet<p></td>
+                <td><p><b>Description</b></br></br>
+		    Retourne le noeud <i>root</i> de l'objet</br>
+		    <i>return : root</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    fvs = FVSPoint((2,5))</br>
+		    -> l'appel de la méthode sur fvs retourne (2,5)<p></td>
               </tr>
             </tbody>
 
@@ -103,15 +119,15 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Retourne le poid <i>w</i> du noeud<p></td>
+                <td><p><b>Description</b></br></br>
+		    Retourne le poid <i>w</i> du noeud</br>
+		    <i>return : w</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    fvs = FVSPoint((2,5), 3)</br>
+		    -> l'appel de la méthode sur fvs retourne 3<p></td>
               </tr>
             </tbody>
 
@@ -121,15 +137,17 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Affecte une nouvelle valeur au poid <i>w</i> du noeud<p></td>
+                <td><p><b>Description</b></br></br>
+		    Affecte une nouvelle valeur au poid <i>w</i> du noeud</br>
+		    <i>param w : nouveau poid</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    fvs = FVSPoint((2,5), 3)</br>
+		    fvs.setW(5)</br>
+		    w = fvs.w()</br>
+		    -> l'affichage de w donne '5'<p></td>
               </tr>
             </tbody>
 
@@ -139,15 +157,15 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Vérifie si le noeud courant a été marque<p></td>
+                <td><p><b>Description</b></br></br>
+		    Vérifie si le noeud courant a été marque</br>
+		       <i>return : isUsed</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    fvs = FVSPoint((2,5))</br>
+		    -> l'appel à la méthode sur fvs retourne false<p></td>
               </tr>
             </tbody>
 
@@ -157,15 +175,16 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Modifie l'attribut <i>isUsed</i> pour marquer ou démarquer un noeud<p></td>
+                <td><p><b>Description</b></br></br>
+		    Modifie l'attribut <i>isUsed</i> pour marquer ou démarquer un noeudw</br>
+		    <i>param val : nouvelle valeur de isUsed</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    fvs = FVSPoint((2,5))</br>
+		    fvs.setIsUsed(true)</br>
+		    -> l'appel à la méthode getIsUsed sur fvs retourne true<p></td>
               </tr>
             </tbody>
           </table>

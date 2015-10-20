@@ -4,25 +4,36 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" media="screen"/>
+    <style>
+      .navbar { margin-bottom:0; }
+    </style>
     <title>DefaultTeam.java</title>
   </head>
   
   <body style="background-color: #f5f5f5">
     <nav class = "navbar navbar-inverse" role = "navigation">
       <div class = "navbar-header">
-	<a class = "navbar-brand" href = "index.html">Documentation</a>
+	<a class = "navbar-brand" href = "index.html"><b>Documentation Bafna-Berman-Fujito</b></a>
       </div>
       
       <div>
 	<ul class = "nav navbar-nav">
           <li><a href = "index.html">Home</a></li>
           <li class = "active"><a href = "packages.html">Packages</a></li>
+	  <li><a href = "#">Historique de developpement</a></li>
+          <li><a href = "https://www-apr.lip6.fr/~buixuan/files/aaga2015/FVS/vfs_bafna.pdf">Bibliographie</a></li>
+	</ul>
+      </div>
+
+      <div>
+	<ul class="nav navbar-nav navbar-right">
+	   <li><a href = "https://fr.linkedin.com/in/mohamedaffes"><b>AFFES Mohamed Amin</b></a></li>
 	</ul>
       </div>
     </nav>
 
     <ul class = "nav nav-pills nav-justified">
-      <li><a href = "#"><b>algorithms</b></a></li>
+      <li><a href = "#" style="background-color : #414141"><b>algorithms</b></a></li>
     </ul>
 
     <ul class = "nav nav-pills nav-justified">
@@ -40,7 +51,7 @@
           <table class = "table">
             <thead>
               <tr>
-                <th style="background-color: white">Contructeur</th>
+                <th style="background-color: white"><h4>Contructeur</h4></th>
               </tr>
             </thead>
             
@@ -50,7 +61,8 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Constructeur sans paramètre héritant de la classe <i>Object</i><p></td>
+                <td><p><b>Description</b></br></br>
+		    Constructeur sans paramètre héritant de la classe <i>Object</i><p></td>
               </tr>
             </tbody>
           </table>
@@ -58,7 +70,7 @@
 	  <table class = "table">
             <thead>
               <tr>
-                <th style="background-color: white">Methodes</th>
+                <th style="background-color: white"><h4>Methodes</h4></th>
               </tr>
             </thead>
             
@@ -68,17 +80,17 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Point d'entrée de notre algorithme, méthode prenant la liste de points a
+                <td><p><b>Description</b></br></br>
+		    Point d'entrée de notre algorithme, méthode prenant la liste de points a
 		    traier en paramètre et retournant le resultat de l'algorithme
-		    <i>Bafna-Berman-Fujito</i><p></td>
+		    <i>Bafna-Berman-Fujito</br>
+		    <i>param points : liste de points a traiter</i></br>
+		    <i>return : nouvelle liste de points apres traitement
+		      de l'algorithme Bafna-Berman-Fujito</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br><p></td>
               </tr>
             </tbody>
 
@@ -88,15 +100,19 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Conversion d'une liste de <i>FVSPoint</i> vers une liste de Point<p></td>
+                <td><p><b>Description</b></br></br>
+		    Conversion d'une liste de <i>FVSPoint</i> vers une liste de Point</br>
+		    <i>param fvsPoints : liste de FVSPoint</i></br>
+		    <i>return points : liste de points convertie</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    fvs1 = FVSPoint((1,8), 2)</br>
+		    fvs2 = FVSPoint((9,38), 1)</br>
+		    fvs3 = FVSPoint((114,80), 1)</br>
+		    fvsList[fvs1, fvs2, fvs3]</br>
+		    -> l'appel à la méthode retourne la liste suivante: [(1,8), (9,38), (114,80)]<p></td>
               </tr>
             </tbody>
 
@@ -106,15 +122,18 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Calcule le degré d'un <i>FVSPoint</i><p></td>
+                <td><p><b>Description</b></br></br>
+		    Calcule le degré d'un <i>FVSPoint</i></br>
+		    <i>param p : le FVSPoint point</i></br>
+		    <i>return res : le degre du point p</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    fvs1 = FVSPoint((1,8), 1)</br>
+		    fvs2 = FVSPoint((9,38), 1)</br>
+		    fvs3 = FVSPoint((114,80), 2)</br>
+		    -> l'appel de la méthode sur fvs1 retourne 1, car fvs1 n'a qu'un seul voisin fvs2<p></td>
               </tr>
             </tbody>
 
@@ -124,15 +143,19 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Retourne la liste des voisins d'un noeud<p></td>
+                <td><p><b>Description</b></br></br>
+		    Retourne la liste des voisins d'un noeud</br>
+		    <i>param p : un FVSPoint</i>
+		    <i>return result : la liste des voisins du noeud p</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    On considère:</br>
+		    p = FVSPoint((2,5), 5)</br>
+		    les points notre graphe [FVSPoint((50,70), 1), FVSPoint((10,8), 2),
+		    FVSPoint((200,8), 1), FVSPoint((130,80), 3)]</br>
+		    -> La méthode retourne la liste [FVSPoint((50,70), 1), FVSPoint((10,8), 2)]<p></td>
               </tr>
             </tbody>
 
@@ -142,15 +165,12 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Méthode implémentant l'algorithme <i>Bafna-Berman-Fujito</i><p></td>
+                <td><p><b>Description</b></br></br>
+		    Méthode implémentant l'algorithme <i>Bafna-Berman-Fujito</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br><p></td>
               </tr>
             </tbody>
 
@@ -160,15 +180,13 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Le traitement à faire lorsqu'un cycle semi disjoint est retrouvé<p></td>
+                <td><p><b>Description</b></br></br>
+		    Le traitement à faire lorsqu'un cycle semi disjoint est retrouvé</br>
+		    <i>param points : les points du cycle semi disjoint</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br><p></td>
               </tr>
             </tbody>
 
@@ -178,15 +196,13 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Le traitement à faire lorsqu'un cycle semi disjoint n'est pas retrouvé<p></td>
+                <td><p><b>Description</b></br></br>
+		    Le traitement à faire lorsqu'un cycle semi disjoint n'est pas retrouvé</br>
+		    <i>param points : les points du graphe G</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br><p></td>
               </tr>
             </tbody>
 
@@ -196,16 +212,20 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Suppression des noeuds ayant un poid <i>0</i> du graphe <i>G</i>, et ajout de ces
+                <td><p><b>Description</b></br></br>
+		    Suppression des noeuds ayant un poid <i>0</i> du graphe <i>G</i>, et ajout de ces
 		    points a la liste de noeuds <i>F</i> ainsi qu'à la pile<p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    G = [FVSPoint((50,70), 1), FVSPoint((100,8), 0), FVSPoint((200,8), 0), FVSPoint((130,80), 3)]</br>
+		    F = []</br>
+		    STACK = []</br>
+		    -> Après exécution de la méthode :</br>
+		    -> G = [FVSPoint((50,70), 1), FVSPoint((130,80), 3)]</br>
+		    -> F = [FVSPoint((100,8), 0), FVSPoint((200,8), 0)]</br>
+		    -> STACK = [FVSPoint((100,8), 0), FVSPoint((200,8), 0)]<p></td>
               </tr>
             </tbody>
 
@@ -215,15 +235,15 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Suppression dans <i>G</i> des noeuds de degré <i>0</i> ou <i>1</i><p></td>
+                <td><p><b>Description</b></br></br>
+		    Suppression dans <i>G</i> des noeuds de degré <i>0</i> ou <i>1</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    G = [FVSPoint((50,70), 1), FVSPoint((100,8), 0), FVSPoint((200,8), 0), FVSPoint((130,80), 3)]</br>
+		    -> Après exécution de la méthode :</br>
+		    -> G = [FVSPoint((130,80), 3)]</br><p></td>
               </tr>
             </tbody>
 
@@ -233,15 +253,16 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Vérifier si la liste points est un cycle semi disjoint<p></td>
+                <td><p><b>Description</b></br></br>
+		    Vérifier si la liste points est un cycle semi disjoint</br>
+		    <i>param points : liste de points a verifier</i></br>
+		    <i>return : 'true' si cycle semi disjoint trouve, 'false' sinon</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	     <tr class = "success">
+               <td><p><b>Exemple</b></br></br>
+		   points = [FVSPoint((20,70), 1), FVSPoint((90,8), 0), FVSPoint((70,8), 0), FVSPoint((130,80), 3)]</br>
+		    -> la méthode retourne false car ici deux noeuds ont plus de deux voisin donc un degré supérieur à 2<p></td>
               </tr>
             </tbody>
 
@@ -252,15 +273,25 @@
               </tr>
               
               <tr class = "warning">
-                <td><p>Recherche un cycle semi disjoint en debutant le parcours depuis current<p></td>
+                <td><p><b>Description</b></br></br>
+		    Recherche un cycle semi disjoint en debutant le parcours depuis current</br>
+		    <i>param parent : le parent du noeud courant null au debut</i></br>
+		    <i>param current : noeud courant</i></br>
+		    <i>param path : liste de noeuds parcourus</i></br>
+		    <i>return : la liste contenant le cycle semi disjoint</i><p></td>
               </tr>
 
-	      <tr class = "warning">
-                <td><p>Test<p></td>
-              </tr>
-
-	      <tr class = "warning">
-                <td><p>Exemple<p></td>
+	      <tr class = "success">
+                <td><p><b>Exemple</b></br></br>
+		    fvs1 = FVSPoint((20,70), 1)</br>
+		    fvs2 = FVSPoint((90,8), 0)</br>
+		    fvs3 = FVSPoint((70,8), 0)</br>
+		    fvs4 = FVSPoint((155,80), 3)</br>
+		    path = []</br>
+		    points = [fvs1, fvs2, fvs3, fvs4]</br>
+		    current = fvs1 </br>
+		    parent = null </br>
+		    -> la méthode retourne la liste [fvs1, fvs2, fvs3]<p></td>
               </tr>
             </tbody>
           </table>
