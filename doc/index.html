@@ -40,8 +40,14 @@
 
     <h2 style="text-align: center">Algorithme Bafna-Berman-Fujito implémenté</h2></br></br>
 
-    <p style="text-align:center">
-      Voici le déroulement de l'algorithme décrit dans la <a href = "https://www-apr.lip6.fr/~buixuan/files/aaga2015/FVS/vfs_bafna.pdf"><b>Bibliographie</b></a>. 
+    <p style="text-align:center; padding-left:15%; padding-right:15%">
+      Nous cherchons ici à résoudre le problème du <b>Feedback vertex set</b> qu'on appelera ici <b>fvs</b>.
+      Le <b>fvs</b> d'un graphe G, est son sous graphe contenant pour chaque cycle dans G qu'un seul de ses sommets.
+      Le problème ici est de faire cela en supprimant le minimum de sommmets du graphe. Donc le minimum de sommets
+      à supprimer de G et permettant d'avoir un graphe <b>fvs</b> final valide.
+      Karp a démontré en 1972 que ce problème est NP complet.</br>
+      Voici le déroulement de l'algorithme décrit dans la
+      <a href = "https://www-apr.lip6.fr/~buixuan/files/aaga2015/FVS/vfs_bafna.pdf"><b>Bibliographie</b></a>. 
     </p></br></br>
 
     <div>
@@ -110,7 +116,7 @@ public static ArrayList<Point> Bafna-Berman-Fujito(ArrayList<Point> points){
         F.remove(u);
 
         // si 'u' n'est pas redondant on le remet dans F
-        if (!evaluation.isValide(originalPoints, fvsListToPointList(F))) {
+        if (!evaluation.isValide(points, fvsListToPointList(F))) {
 	    F.add(u);
         }
     }
