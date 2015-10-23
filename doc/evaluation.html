@@ -10,7 +10,7 @@
     <title>Evaluation.java</title>
   </head>
   
-  <body style="background-color: #f5f5f5">
+  <body style="background-color: rgba(33, 109, 167, 0.29)">
     <nav class = "navbar navbar-inverse" role = "navigation">
       <div class = "navbar-header">
 	<a class = "navbar-brand" href = "index.html"><b>Documentation Bafna-Berman-Fujito</b></a>
@@ -20,7 +20,7 @@
 	<ul class = "nav navbar-nav">
           <li><a href = "index.html">Home</a></li>
           <li class = "active"><a href = "packages.html">Packages</a></li>
-	  <li><a href = "#">Historique de developpement</a></li>
+	  <li><a href = "historique.html">Historique de développement</a></li>
           <li><a href = "https://www-apr.lip6.fr/~buixuan/files/aaga2015/FVS/vfs_bafna.pdf">Bibliographie</a></li>
 	</ul>
       </div>
@@ -57,7 +57,7 @@
           <table class = "table">
             <thead>
               <tr>
-                <th style="background-color: white"><h4>Contructeur</h4></th>
+                <th style="border: 1px solid black;box-shadow:5px 5px 5px;"><h4>Contructeur</h4></th>
               </tr>
             </thead>
             
@@ -76,7 +76,7 @@
 	  <table class = "table">
             <thead>
               <tr>
-                <th style="background-color: white"><h4>Methodes<h4></th>
+                <th style="border: 1px solid black;box-shadow:5px 5px 5px;"><h4>Methodes<h4></th>
               </tr>
             </thead>
             
@@ -118,7 +118,17 @@
               </tr>
 
 	      <tr class = "success">
-                <td><p><b>Exemple</b></br></br><p></td>
+                <td><p><b>Exemple</b></br></br>
+		    Point fvs1 = new Point(20, 70)</br>
+		    Point fvs2 = new Point(90, 8)</br>
+		    Point fvs3 = new Point(70, 8)</br>
+		    Point fvs4 = new Point(155, 80)</br>
+		    origPoints = [fvs1, fvs2, fvs3, fvs4]</br>
+		    fvs = [fvs4]<br>
+		    -> L'appel a la methode retourne false, car fvs1, fvs2 et fvs3 forment un cycle</br>
+		    -> Si on remplace donc la parametre origPoints par:
+		    origPoints = [fvs1, fvs2, fvs4] la méthode retourne 'true'. Car après suppresion de fvs4 il
+		    ne reste plus que fvs1 et son voisin fvs2. Ce qui forme un graphe valide.<p></td>
               </tr>
             </tbody>
 
