@@ -46,7 +46,7 @@
       <!-- Carousel items -->
       <div class = "carousel-inner">
 	<div class = "item active">
-	   </br><li><p>Classe implementant l'algorithme <i><b>Bafna-Berman-Fujito</b></i></p></li></br>
+	   </br><li><p>Classe implémentant l'algorithme <i><b>Bafna-Berman-Fujito</b></i></p></li></br>
 	  
           <table class = "table">
             <thead>
@@ -70,7 +70,7 @@
 	  <table class = "table">
             <thead>
               <tr>
-                <th style="border: 1px solid black;box-shadow:5px 5px 5px;"><h4>Methodes</h4></th>
+                <th style="border: 1px solid black;box-shadow:5px 5px 5px;"><h4>Méthodes</h4></th>
               </tr>
             </thead>
             
@@ -84,11 +84,11 @@
 		    Point d'entrée de notre algorithme, méthode prenant la liste de points a
 		    traier en paramètre et retournant le resultat de l'algorithme
 		    <i>Bafna-Berman-Fujito. La liste commence par transformer les points en FVSPoint
-		      puis appel la méthode start exécutant l'algorithme <b>Bafna-Berman-Fujito</b>,
+		      puis appelle la méthode start exécutant l'algorithme <b>Bafna-Berman-Fujito</b>,
 		      puis finalement reconvertie les points résultants en FVSPoint
 		      et retourne la liste des points à retirer</br>
 		    <i>param points : liste de points a traiter</i></br>
-		    <i>return : liste des points à retirer du graphe apràs traitement
+		    <i>return : liste des points à retirer du graphe après traitement
 		      de l'algorithme <b>Bafna-Berman-Fujito</b></i><p></td>
               </tr>
             </tbody>
@@ -169,7 +169,7 @@
               </tr>
 
 	      <tr class = "success">
-                <td><p><b><a href = "index.html" style="padding-left:40%">Voir exemple se trouvant dans la page d'acceuil</a></b></br></br><p></td>
+                <td><p><b><a href = "index.html" style="padding-left:40%">Voir exemple se trouvant sur la page d'acceuil</a></b></br></br><p></td>
               </tr>
             </tbody>
 
@@ -190,7 +190,7 @@
 		    fvs2 = FVSPoint((90,8), 0)</br>
 		    fvs3 = FVSPoint((70,8), 0)</br>
 		    fvs4 = FVSPoint((155,80), 3)</br>
-		    points = [fvs1, fvs2, fvs3, fvs4]</br>
+		    points[fvs1, fvs2, fvs3, fvs4]</br>
 		    -> l'appel à la méthode modifie les poids des élements de la liste comme suit :</br>
 		    -> les poids de tous les points sont égaux au poid minimal dans la liste,
 		    donc tous les points ont un poid égal à 0.<p></td>
@@ -215,7 +215,7 @@
 		    fvs3 = FVSPoint((70,8), 0)</br>
 		    fvs4 = FVSPoint((155,80), 3)</br>
 		    fvs5 = FVSPoint((100,80), 2)</br>
-		    points = [fvs1, fvs2, fvs3, fvs4, fvs5]</br>
+		    points[fvs1, fvs2, fvs3, fvs4, fvs5]</br>
 		    -> l'appel à la méthode modifie les poids des élements de la liste comme suit :</br>
 		    -> les poids de chaque point est égal à : <b(poid du point 'w' - g * (degré du point 'd' - 1))</b>,
 		    avec <b>g = (poid du point 'w' / (degré du point 'd' - 1)) minimal</b>, ici <b>g = 0</b>.
@@ -236,13 +236,13 @@
 
 	      <tr class = "success">
                 <td><p><b>Exemple</b></br></br>
-		    G = [FVSPoint((50,70), 1), FVSPoint((100,8), 0), FVSPoint((200,8), 0), FVSPoint((130,80), 3)]</br>
-		    F = []</br>
+		    G[FVSPoint((50,70), 1), FVSPoint((100,8), 0), FVSPoint((200,8), 0), FVSPoint((130,80), 3)]</br>
+		    F[]</br>
 		    STACK = []</br>
 		    -> Après exécution de la méthode :</br>
-		    -> G = [FVSPoint((50,70), 1), FVSPoint((130,80), 3)]</br>
-		    -> F = [FVSPoint((100,8), 0), FVSPoint((200,8), 0)]</br>
-		    -> STACK = [FVSPoint((100,8), 0), FVSPoint((200,8), 0)]<p></td>
+		    -> G[FVSPoint((50,70), 1), FVSPoint((130,80), 3)]</br>
+		    -> F[FVSPoint((100,8), 0), FVSPoint((200,8), 0)]</br>
+		    -> STACK[FVSPoint((100,8), 0), FVSPoint((200,8), 0)]<p></td>
               </tr>
             </tbody>
 
@@ -258,9 +258,9 @@
 
 	      <tr class = "success">
                 <td><p><b>Exemple</b></br></br>
-		    G = [FVSPoint((50,70), 1), FVSPoint((100,8), 0), FVSPoint((200,8), 0), FVSPoint((130,80), 3)]</br>
+		    G[FVSPoint((50,70), 1), FVSPoint((100,8), 0), FVSPoint((200,8), 0), FVSPoint((130,80), 3)]</br>
 		    -> Après exécution de la méthode :</br>
-		    -> G = [FVSPoint((130,80), 3)]</br><p></td>
+		    -> G[FVSPoint((130,80), 3)]</br><p></td>
               </tr>
             </tbody>
 
@@ -279,7 +279,7 @@
 	     <tr class = "success">
                <td><p><b>Exemple</b></br></br>
 		   points = [FVSPoint((20,70), 1), FVSPoint((90,8), 0), FVSPoint((70,8), 0), FVSPoint((130,80), 3)]</br>
-		    -> la méthode retourne false car ici deux noeuds ont plus de deux voisin donc un degré supérieur à 2<p></td>
+		    -> la méthode retourne false car ici deux noeuds ont plus de deux voisins donc un degré supérieur à 2<p></td>
               </tr>
             </tbody>
 
@@ -291,7 +291,7 @@
               
               <tr class = "warning">
                 <td><p><b>Description</b></br></br>
-		    Recherche un cycle semi disjoint en debutant le parcours depuis current</br>
+		    Recherche un cycle semi disjoint en débutant le parcours depuis current</br>
 		    <i>param parent : le parent du noeud courant null au debut</i></br>
 		    <i>param current : noeud courant</i></br>
 		    <i>param path : liste de noeuds parcourus</i></br>
@@ -304,8 +304,8 @@
 		    fvs2 = FVSPoint((90,8), 0)</br>
 		    fvs3 = FVSPoint((70,8), 0)</br>
 		    fvs4 = FVSPoint((155,80), 3)</br>
-		    path = []</br>
-		    points = [fvs1, fvs2, fvs3, fvs4]</br>
+		    path[]</br>
+		    points[fvs1, fvs2, fvs3, fvs4]</br>
 		    current = fvs1 </br>
 		    parent = null </br>
 		    -> la méthode retourne la liste [fvs1, fvs2, fvs3]<p></td>
